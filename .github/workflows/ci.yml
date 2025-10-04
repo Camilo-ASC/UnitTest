@@ -19,8 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_TYPESCRIPT_ES: true
           VALIDATE_JAVASCRIPT_ES: true
-          VALIDATE_JSON: false
-          IGNORE_PATTERNS: 'package-lock.json'
+          VALIDATE_ALL_CODEBASE: true
 
       - name: ⚙️ Configurar Node.js
         uses: actions/setup-node@v4
