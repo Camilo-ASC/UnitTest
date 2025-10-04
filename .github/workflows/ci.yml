@@ -20,6 +20,7 @@ jobs:
           VALIDATE_TYPESCRIPT_ES: true
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_JSON: true
+          IGNORE_PATTERNS: 'package-lock.json'
 
       - name: ⚙️ Configurar Node.js
         uses: actions/setup-node@v4
