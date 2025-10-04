@@ -1,0 +1,14 @@
+# Dependencias
+/node_modules
+
+# Compilados de TypeScript
+/dist
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones del sistema
+.DS_Store
+Thumbs.db
