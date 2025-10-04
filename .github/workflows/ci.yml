@@ -12,6 +12,15 @@ jobs:
       - name: 🧩 Checkout del código
         uses: actions/checkout@v4
 
+      - name: 🔎 Super-Linter
+        uses: github/super-linter@v6
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_TYPESCRIPT_ES: false
+          VALIDATE_JSON: true
+
       - name: ⚙️ Configurar Node.js
         uses: actions/setup-node@v4
         with:
